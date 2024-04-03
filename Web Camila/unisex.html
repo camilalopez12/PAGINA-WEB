@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumes Unisex</title>
+  <link rel="stylesheet" href="unisex.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Perfumes Unisex</div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="slide">
+      <img src="" alt="Perfume 1">
+    </div>
+    <div class="slide">
+      <img src="perfume2.jpg" alt="Perfume 2">
+    </div>
+    <div class="slide">
+      <img src="perfume3.jpg" alt="Perfume 3">
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="card-container">
+    <div class="card">
+      <img src="351682-800-800.webp" alt="Perfume 4">
+      <h3>perfume</h3>
+      <p>lleve el mejor perfume</p>
+      <p>$20.000</p>
+      
+    </div>
+    <div class="card">
+      <img src="c0722f1f23b48af9f9752f85b3cec8e39667f6d9.XL2.jpg" alt="Perfume 5">
+      <h3>Perfume</h3>
+      <p>excelente haroma</p>
+      <p>$15.000</p>
+      
+    </div>
+    <div class="card">
+      <img src="c0722f1f23b48af9f9752f85b3cec8e39667f6d9.XL2.jpg" alt="Perfume 6">
+      <h3>Perfume</h3>
+      <p>lo mejor en calidad !</p>
+      <p>$25.000</p>
+      
+    </div>
+  <!-- </div>
+
+
+  <div class="card-container"> -->
+    <div class="card">
+      <img src="perfumes.....jpg" alt="Perfume 4">
+      <h3>Perfume</h3>
+      <p>un buen elemento</p>
+      <p>$30.000</p>
+      
+    </div>
+    <div class="card">
+      <img src="ssdfdsfdsfds.webp" alt="Perfume 5">
+      <h3>Perfume</h3>
+      <p>lo mejor</p>
+      <p>$29.390</p>
+      
+    </div>
+    <div class="card">
+      <img src="sdfsdfsdfdsfsdfdsfsdf.webp" alt="Perfume 6">
+      <h3>Perfume</h3>
+      <p>lo caro, sale bueno</p>
+      <p>$39.000</p>
+      
+    </div>
+  <!-- </div>
+
+  <div class="card-container"> -->
+    <div class="card">
+      <img src="fichaaaaaa.jpg" alt="Perfume 4">
+      <h3>Perfume</h3>
+      <p>excelente perfume </p>
+      <p>$56.000</p>
+      
+    </div>
+    <div class="card">
+      <img src="121211221.jpg" alt="Perfume 5">
+      <h3>Perfume</h3>
+      <p>bueno, bonito y barato</p>
+      <p>$18.000</p>
+      
+    </div>
+    <div class="card">
+      <img src="787686876867867867.webp" alt="Perfume 6">
+      <h3>Perfume</h3>
+      <p>mi primera chamba</p>
+      <p>$23.000</p>
+     
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detalles del Perfume</h2>
+      <p>Aquí puedes agregar más información sobre el perfume seleccionado.</p>
+    </div>
+  </div>
+
+<style>
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Carousel */
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Cards */
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    width: 80%;
+    padding: 0px 10%;
+    column-gap: 3%;
+    row-gap: 6vh;
+  }
+  
+  .card {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+</style>
+
+
+</body>
+</html>
